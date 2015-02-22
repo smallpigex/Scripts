@@ -12,4 +12,15 @@ public class Tile : MonoBehaviour {
 	void Update () {
 	
 	}
+
+    void OnMouseEnter ()
+    {
+        //Debug.Log("My position is " + gridPosition + " and color is blue");
+        transform.renderer.material.color = Color.blue;
+    }
+
+    void OnMouseExit ()
+    {
+        transform.renderer.material.color = Color.white;
+    }
 }
